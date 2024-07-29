@@ -1,0 +1,8 @@
+Hi GPT , Do you know about keycloak and their integration with spring boot and angular , i need to
+develop a project, which is a proof of concept which contains basic authentication , next sso login 
+by using keycloak openid then passkeys. Additional Tools that i used to develop in mind is docker to 
+run keycloak container and final builded I need to deploy in minikube and    nginx : i have no ideas 
+what i need to do in this tools you can give some ideas
+
+so right now what i did is i create docker container to run the keycloak which using mysql db 
+
