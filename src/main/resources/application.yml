@@ -1,0 +1,24 @@
+spring:
+    application:
+        name : keycloak-angular
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri:  http://localhost:8080/realms/security
+                    jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+server:
+    port: 8081
+
+jwt:
+    auth:
+        converter:
+            request-id: secret-client
+            principle-attribute: preferred_username
+
+
+logging:
+    level:
+        org:
+            springframework:
+                security: DEBUG

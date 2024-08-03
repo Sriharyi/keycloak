@@ -2,6 +2,10 @@ version: '3.8'
 
 services:
   app:
-    build: .
+    container_name: myspringapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myspringapp:v1
     ports:
-      - "9090:9090"
+      - "8081:8081"
